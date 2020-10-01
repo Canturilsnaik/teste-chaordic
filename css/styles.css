@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+
+:root{
+  --without-width: 580px;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+.header{
+  background: #707070;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 67%);
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+}
+
+.header__sub-tittle {
+  font-size: 20px;
+  margin-top: 69px;
+}
+
+.header__tittle {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.header__min-tittle {
+  font-size: 1.4rem;
+  margin-bottom: 62px;
+}
+
+.c-header__btn {
+  height: 40px;
+  width: 160px;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: calc(1500px - var(--without-width));
+  margin: 0 auto;
+}
+
+.section-form {
+  display: grid;
+  grid-template-columns: minmax(340px , 520px) minmax(340px , 340px);
+}
+
+.txt__tittle {
+  margin-bottom: 30px;
+}
+
+.txt__text {
+  margin-right: 60px;
+}
+
+.section-form__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divider{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin: 95px 0 50px 0;
+}
+
+.divider__hr{
+  flex-grow: 1;
+}
+
+.divider__p {
+  margin: 0 10px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 32px;
+  justify-content: center;
+  min-height: 740px;
+  width: 100%;
+}
+
+.items__card{
+  max-width: 201px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.card__name, .card__old-price, .card__division {
+  font-size: 1.4rem;
+}
+
+.card__description {
+  font-size: 1.2rem;
+}
+
+.card__buy {
+  background: #fff;
+  border-radius: 4px;
+  height: 30px;
+  width: 100%;
+}
+
+.form--friend{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+  max-width: 760px;
+}
+
+.form--friend__field {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+
+.field__friend-name{
+  margin-right: 40px;
+}
+
+.field__friend-name, .field__email {
+  height: 30px;
+}
+
+.form--friend__btn {
+  border-radius: 4px;
+  height: 39px;
+  margin-top: 50px;
+  width: 260px;
+}
+
+.footer{
+  background: #707070;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42.3vh;
+  width: 100%;
+}
+
+.footer__text {
+  color: #f2f2f2;
+  text-align: center;
+  width: 250px;
+}
+
+@media (max-width: 860px) {
+  .section-form {
+    grid-template-columns: minmax(340px , 520px);
+  }
+
+  .txt__text{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+  }
+
+  .form--friend {
+    flex-direction: column;
+  }
+
+  .field__friend-name {
+    margin-right: 0;
+  }
+} 
